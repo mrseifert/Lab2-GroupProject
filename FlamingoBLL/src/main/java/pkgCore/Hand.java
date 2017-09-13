@@ -8,9 +8,9 @@ public class Hand {
 	private int iScore;
 	private ArrayList<Card> cards = new ArrayList<Card>();
 	
-	public Hand()
-	{
-		
+	public Hand(){
+		this.Draw();
+		this.Draw();
 	}
 	
 	public int[] ScoreHand()
@@ -40,7 +40,8 @@ public class Hand {
 	
 	public void Draw(Deck d)
 	{
-		//	TODO: add a card to 'cards' from a card drawn from Deck d
+		this.AddCard(d.draw());
+		
 	}
 	
 	private void AddCard(Card c)
