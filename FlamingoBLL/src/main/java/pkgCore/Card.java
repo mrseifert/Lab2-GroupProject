@@ -1,5 +1,5 @@
 package pkgCore;
-
+//chicken
 import pkgEnum.*;
 
 public class Card implements Comparable {
